@@ -1,0 +1,17 @@
+﻿<!--details.html-->
+<div class="details">
+    <a id="back-button" href="/">Back</a>
+    <h1><a target="_blank" href="{{currentPost.link}}">{{currentPost.title}}</a></h1>
+    <div class="bottom-margin">
+        <a target="_blank" class="no-dec-link" href="https://www.flickr.com/photos/{{currentPost.author_id}}">{{authorName(currentPost.author)}}</a> | Published: {{currentPost.published}}
+    </div>
+    <div class="post-image-holder post-segment">
+        <div class="post-image" style="background:url({{currentPost.media.m}})"> </div>
+    </div>
+    <div class="current-content post-segment description-box" ng-bind-html="to_trusted(currentPost.description)">    </div>
+    <div class="current-tags">
+        <a class="tag-link" ng-click="getFeed(tag.name)" ng-repeat="tag in currentTags">{{tag.name}}</a>
+    </div>
+    <a id="back-button" href="/">Back</a>
+
+</div>

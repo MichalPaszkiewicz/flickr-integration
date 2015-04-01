@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html ng-app="app">
+	<head>
+		<title>Flickr's astrophotography</title>
+		<meta name="description" content="Testing Flickr API feed with Angular js.">
+		<script src="./js/angular.min.js"></script>
+		<script src="./js/angular-resource.min.js"></script>
+		<script src="./js/angular-route.min.js"></script>
+        <link href="styles/styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="main-container">
+			<div class="header">
+				<h1 ><a href="./#/home">Flickr's astrophotos</a></h1>
+			</div>
+            <div class="header-push"></div>
+
+            <div class="main-content" ng-controller="mainController">
+
+                <div ng-view></div>
+
+            </div>  
+
+			<div class="footer-push"></div>
+		</div>
+		<div class="footer">
+            <p>By <a target="_blank" alt="The best website in the world." href="http://www.michalpaszkiewicz.co.uk">Michal Paszkiewicz</a></p>
+        </div>		
+		
+		<script src="./app.js"></script>
+        <script src="./controllers/mainController.js"></script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+﻿<!--main.html-->
+<div class="main-list">
+    <h1 class="top-title">Feed: {{tag}}</h1>
+    <input placeholder="search" ng-model="postFilter"/>
+    <div class="main-list-item" ng-repeat="post in posts | filter:postFilter">
+        <div class="post-image-holder post-segment" ng-click="moveTo(post)">
+            <div class="post-image" style="background:url({{post.media.m}})"> </div>
+        </div><div class="post-segment second">
+                  <div class="post-detail title" ng-click="moveTo(post)">
+                      {{post.title}}
+                  </div>
+            <div class="post-detail big">
+                <a target="_blank" class="no-dec-link" href="https://www.flickr.com/photos/{{post.author_id}}">{{authorName(post.author)}}</a> Published: {{post.published}} <a target="_blank" href="{{post.link}}">View on flickr</a>
+            </div>
+            <div class="post-detail small">
+                <div class="small-line">Published: {{post.published}}</div>
+                <div class="small-line"><a target="_blank" class="small-left no-dec-link" href="https//www.flickr.com/photos/{{post.author_id}}">{{authorName(post.author)}}</a> <a target="_blank" class="small-right" href="{{post.link}}">View on flickr</a><div class="clear-fix"></div></div>
+            </div>
+        </div>
+    </div>
+</div>

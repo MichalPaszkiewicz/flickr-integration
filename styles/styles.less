@@ -1,0 +1,124 @@
+﻿@import "base.less";
+@import "styles.small.less";
+
+.main-content {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+
+    .top-title {
+        text-align: center;
+    }
+
+    .bottom-margin {
+        margin-bottom: 20px;
+    }
+
+    .tag-link {
+        margin: 5px;
+        display: inline-block;
+        text-decoration: underline;
+        color: #9330e1;
+        cursor: pointer;
+    }
+}
+
+.big {
+}
+
+.small {
+    display: none;
+}
+
+.no-dec-link {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.main-list-item {
+    margin: 0 0 20px 0;
+    border-bottom: 1px black solid;
+    background: rgb(242, 246, 255);
+
+    .post-image-holder {
+        cursor: pointer;
+    }
+}
+
+.post-segment {
+    display: inline-block;
+    vertical-align: top;
+
+    &.second {
+        width: 500px;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 30px;
+        text-overflow: ellipsis;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: text-shadow 0.5s ease;
+
+        &:hover {
+            text-shadow: #8989ee 1px 1px 5px;
+        }
+    }
+
+    a {
+        color: rgb(147, 48, 225);
+    }
+}
+
+.description-box {
+    max-width: 400px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.post-image-holder {
+    background: black;
+    width: 200px;
+    height: 130px;
+
+    .post-image {
+        width: 100%;
+        height: 100%;
+        background-size: contain !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+
+        &:hover {
+            filter: brightness(1.5);
+            -webkit-filter: brightness(1.5);
+            -moz-filter: brightness(1.5);
+        }
+    }
+}
+
+#back-button {
+    display: block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    background: rgb(175, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+
+    &:hover {
+        background: rgb(219, 22, 22);
+    }
+}
+
+.details {
+    background: rgb(242, 246, 255);
+    padding: 5px;
+    border-radius: 5px;
+}
