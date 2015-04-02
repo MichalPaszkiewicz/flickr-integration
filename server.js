@@ -13,7 +13,8 @@ var contentTypes = {
     'js': "text/javascript",
     'css': "text/css",
     'png': "image/png",
-    'ico': "image/x-icon"
+    'ico': "image/x-icon",
+    'map': "text/javascript"
 };
 
 var testURL = "https://api.flickr.com/services/feeds/photos_public.gne?tagmode=all&format=json&tags=";
