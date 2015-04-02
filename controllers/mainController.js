@@ -1,5 +1,3 @@
-﻿var blah = {};
-
 angular.module('app').controller('mainController', function ($scope, $http, $location, $sce) {
 
     $scope.posts = {};
@@ -34,7 +32,6 @@ angular.module('app').controller('mainController', function ($scope, $http, $loc
     $scope.tag = "astrophotography"
 
     var jsonFlickrFeed = function (data) {
-        blah = data;
         $scope.posts = data.items;
     }
 
